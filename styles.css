@@ -1,0 +1,312 @@
+/* #region Base */
+* {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fbfbfb;
+}
+
+body {
+    background-color: #7a3145;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* #endregion */
+
+/* #region Common */
+/* Styles for Mobile devices */
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 704px;
+        padding: 100px 32px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1080px;
+        padding: 100px;
+    }
+}
+/* #endregion */
+
+/* #region Header */
+
+/* #endregion */
+
+/* #region Hero */
+
+/* #endregion */
+
+/* #region How It Works */
+.how-it-works-box {
+    background-color: #7a3145;
+}
+
+.img-box-how-it-works {
+    background-color: transparent;
+    min-height: 452px;
+    background-repeat: no-repeat;
+    margin: 40px 20px;
+    background-size: cover;
+    border-radius: 30px;
+    background-position: center;
+    background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_mob@1x.jpg);
+}
+
+@media only screen and (min-resolution: 192dpi) {
+    .img-box-how-it-works {
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_mob@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img-box-how-it-works {
+        margin: 100px 64px;
+        min-height: 640px;
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_tab@1x.jpg);
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .img-box-how-it-works {
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_tab@2x.jpg);
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .img-box-how-it-works {
+        margin: 100px;
+        width: 50%;
+        min-height: 560px;
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_desk@1x.jpg);
+    }
+}
+
+@media only screen and (min-width: 1080px) and (min-resolution: 192dpi) {
+    .img-box-how-it-works {
+        background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_desk@2x.jpg);
+    }
+}
+
+/* #region For tag <Picture> */
+/* .img-how-it-works {
+    border-radius: 30px;
+}
+@media only screen and (min-width: 768px) {
+    .img-box-how-it-works {
+        padding: 100px 64px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .img-box-how-it-works {
+        padding: 100px;
+    }
+} */
+/* #endregion */
+
+.wrapper-how-it-works {
+    padding: 80px 20px;
+    background-color: #576f35;
+}
+
+.text-how-it-works-up {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.0;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.marker {
+    color: #d4bfc4;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+.text-how-it-works {
+    /* font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43; */
+    margin-bottom: 40px;
+}
+
+.how-it-works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    counter-reset: item 0;
+}
+
+.how-it-works-item {
+    display: flex;
+    gap: 24px;
+    border-radius: 15px;
+    padding: 12px 24px;
+    background-color: #fbfbfb;
+    align-items: center;
+    counter-increment: item;
+}
+
+.marker-2 {
+    font-weight: 700;
+    color: #141414;
+}
+
+.how-it-works-item::before {
+    content: counter(item) " ";
+    background-image: url("./image/how-it-works/how-it-works/ol.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.li-wrapper {
+    max-width: 211px;
+    color: #858585;
+}
+
+/* #region Tablet Style */
+@media only screen and (min-width: 768px) {
+    .wrapper-how-it-works {
+        padding: 100px 164px;
+    }
+
+    .text-how-it-works-up {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .text-how-it-works {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 52px;
+    }
+
+    .how-it-works-list {
+        gap: 24px;
+    }
+
+    .how-it-works-item {
+        padding-right: 15px;
+    }
+
+    .li-wrapper {
+        max-width: 325px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+/* #endregion */
+
+@media only screen and (min-width: 1080px) {
+    .how-it-works-box {
+        display: flex;
+    }
+
+    .wrapper-how-it-works {
+        padding: 100px;
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .text-how-it-works {
+        margin-bottom: 104px;
+    }
+
+    /* .text-how-it-works-up {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .text-how-it-works {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 52px;
+    }
+    .how-it-works-list {
+        gap: 24px;
+    }
+    .how-it-works-item {
+        padding-right: 15px;
+    }
+    .li-wrapper {
+        max-width: 325px;
+        font-size: 16px;
+        line-height: 1.25;
+    } */
+}
+/* #endregion */
