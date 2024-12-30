@@ -65,26 +65,33 @@ img {
 
 /* #region Common */
 /* Styles for Mobile devices */
+section {
+    padding: 80px 0;
+}
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 100px 0;
+    }
+}
 .container {
-    min-width: 320px;
     max-width: 375px;
     margin: 0 auto;
-    padding: 80px 20px;
+    padding: 0 20px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .container {
-        max-width: 704px;
-        padding: 100px 32px;
+        max-width: 768px;
+        padding: 0 32px;
     }
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1080px) {
     .container {
         max-width: 1080px;
-        padding: 100px;
+        padding: 0 100px;
     }
 }
 /* #endregion */
@@ -99,10 +106,44 @@ img {
 
 /* #region How It Works */
 .how-it-works-box {
-    background-color: #7a3145;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+    .how-it-works-box {
+        padding-top: 100px;
+    }
 }
 
 .img-box-how-it-works {
+    padding-bottom: 40px;  
+}
+@media only screen and (min-width: 768px) {
+    .img-box-how-it-works {
+        padding: 0 64px 100px 64px;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .img-box-how-it-works {
+        padding: 100px;
+    }
+}
+
+.img-background {
+    position: relative;
+}
+.img-background::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgba(20, 20, 20, 0.2);
+}
+/* #region Background IMG */
+/* .img-box-how-it-works {
     background-color: transparent;
     min-height: 452px;
     background-repeat: no-repeat;
@@ -146,27 +187,32 @@ img {
     .img-box-how-it-works {
         background-image: linear-gradient(rgba(20, 20, 20, 0.2), rgba(20, 20, 20, 0.2)), url(./image/how-it-works/how-it-works/how-it_desk@2x.jpg);
     }
-}
+} */
+/* #endregion */
 
 /* #region For tag <Picture> */
-/* .img-how-it-works {
+.img-how-it-works {
     border-radius: 30px;
 }
 @media only screen and (min-width: 768px) {
-    .img-box-how-it-works {
-        padding: 100px 64px;
+    .img-how-it-works {
+        width: 640px;
+        height: 640px;
     }
 }
 
 @media only screen and (min-width: 1080px) {
-    .img-box-how-it-works {
-        padding: 100px;
+    .img-how-it-works {
+        width: 440px;
+        height: 560px;
     }
-} */
+}
+
 /* #endregion */
 
 .wrapper-how-it-works {
-    padding: 80px 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #576f35;
 }
 
@@ -217,9 +263,12 @@ img {
 
 .how-it-works-item::before {
     content: counter(item) " ";
-    background-image: url("./image/how-it-works/how-it-works/ol.png");
+    /* background-image: url("./image/how-it-works/how-it-works/ol.png");
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    border-radius: 50%;
+    border: 5px solid #d4bfc4;
+    background-color: #7a3145;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,7 +276,6 @@ img {
     font-size: 18px;
     line-height: 111%;
     letter-spacing: -0.01em;
-    text-transform: uppercase;
     color: #fbfbfb;
     width: 52px;
     height: 52px;
@@ -276,6 +324,7 @@ img {
 @media only screen and (min-width: 1080px) {
     .how-it-works-box {
         display: flex;
+        padding-top: 0;
     }
 
     .wrapper-how-it-works {
