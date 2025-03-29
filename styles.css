@@ -101,6 +101,10 @@ section {
     }
 }
 
+.swiper {
+    width: 335px;
+    height: 228px;
+}
 /* #endregion */
 
 /* #region Header */
@@ -691,10 +695,6 @@ section {
 .reviews-text {
     color: #141414;
     margin-bottom: 40px;
-}
-
-.reviews-list {
-    /* display: flex; */
 }
 
 .reviews-item {
