@@ -553,10 +553,6 @@ section {
 /* #endregion */
 
 /* #region Vegetables */
-.vegetables {}
-
-.container {}
-
 .vegetables-subtitle {
     font-weight: 600;
     font-size: 48px;
@@ -664,5 +660,77 @@ section {
      }
 }
 
-.vegetables-img {}
+/* #endregion */
+
+/* #region Reviews */
+.reviews {
+    background-color: #fbfbfb;;
+}
+
+.container {}
+
+.reviews-subtitle {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.marker-3 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #576f35;
+}
+
+.reviews-text {
+    color: #141414;
+    margin-bottom: 40px;
+}
+
+.reviews-list {
+    /* display: flex; */
+}
+
+.reviews-item {
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
+    padding: 20px 16px;
+    width: 335px;
+    height: 228px;
+}
+
+@media only screen and (max-width: 374px) {
+    .reviews-item {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.reviews-img {
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.reviews-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #141414;
+    margin-bottom: 8px;
+}
+
+.reviews-feedback {
+    text-align: center;
+    color: #858585;
+    max-width: 288px;
+}
 /* #endregion */
